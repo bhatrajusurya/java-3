@@ -59,7 +59,7 @@ public class Toys {
 
             int money=sc.nextInt();
 
-            System.out.println("The no of Toys you can purchased" + getMaxToys(prices, money));
+            System.out.println("The no of Toys you can purchased :- " + getMaxToys(prices, money));
         }
 
     }
