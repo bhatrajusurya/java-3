@@ -46,21 +46,21 @@ public class Toys {
     }
     public static void main(String[] args){
 
-        Scanner sc=new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            int n=sc.nextInt();
 
-        int n=sc.nextInt();
+            int prices[]=new int[n];
 
-        int prices[]=new int[n];
+            for(int i=0;i<n;i++){
 
-        for(int i=0;i<n;i++){
+                prices[i]=sc.nextInt();
 
-            prices[i]=sc.nextInt();
+            }  
 
-        }  
+            int money=sc.nextInt();
 
-        int money=sc.nextInt();
-
-        System.out.println(getMaxToys(prices, money));
+            System.out.println("The no of Toys you can purchased" + getMaxToys(prices, money));
+        }
 
     }
 
